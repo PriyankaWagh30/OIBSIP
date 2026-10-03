@@ -1,1 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter | Priyanka Wagh</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            Temp<span>Convert</span>
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#converter">
+                Converter
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="tagline">
+                    SMART TEMPERATURE CONVERTER
+                </p>
+
+
+                <h1>
+
+                    Convert Temperature
+
+                    <span>
+                        Instantly.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-text">
+
+                    Easily convert temperatures between
+                    Celsius, Fahrenheit, and Kelvin with a
+                    simple and user-friendly interface.
+
+                </p>
+
+
+                <a href="#converter" class="hero-btn">
+
+                    Start Converting
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONVERTER SECTION ================= -->
+
+        <section id="converter" class="converter-section">
+
+
+            <div class="section-heading">
+
+                <p>
+                    TEMPERATURE CONVERTER
+                </p>
+
+
+                <h2>
+
+                    Convert With
+                    <span>Ease</span>
+
+                </h2>
+
+            </div>
+
+
+
+            <!-- Converter Card -->
+
+            <div class="converter-card">
+
+
+                <!-- Temperature Input -->
+
+                <label for="temperature">
+
+                    Enter Temperature
+
+                </label>
+
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter value"
+                >
+
+
+
+                <!-- Unit Selection -->
+
+                <label for="unit">
+
+                    Select Unit
+
+                </label>
+
+
+                <select id="unit">
+
+
+                    <option value="celsius">
+
+                        Celsius (°C)
+
+                    </option>
+
+
+                    <option value="fahrenheit">
+
+                        Fahrenheit (°F)
+
+                    </option>
+
+
+                    <option value="kelvin">
+
+                        Kelvin (K)
+
+                    </option>
+
+
+                </select>
+
+
+
+                <!-- Convert Button -->
+
+                <button onclick="convertTemperature()">
+
+                    Convert Temperature
+
+                </button>
+
+
+
+                <!-- ================= RESULT ================= -->
+
+                <div id="result" class="result">
+
+
+                    <!-- Celsius Result -->
+
+                    <div class="result-box">
+
+                        <span>
+                            Celsius
+                        </span>
+
+
+                        <strong id="celsiusResult">
+
+                            -- °C
+
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- Fahrenheit Result -->
+
+                    <div class="result-box">
+
+                        <span>
+                            Fahrenheit
+                        </span>
+
+
+                        <strong id="fahrenheitResult">
+
+                            -- °F
+
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- Kelvin Result -->
+
+                    <div class="result-box">
+
+                        <span>
+                            Kelvin
+                        </span>
+
+
+                        <strong id="kelvinResult">
+
+                            -- K
+
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section id="about" class="about-section">
+
+
+            <div class="section-heading">
+
+                <p>
+                    ABOUT THIS PROJECT
+                </p>
+
+
+                <h2>
+
+                    Simple.
+                    <span>Fast. Useful.</span>
+
+                </h2>
+
+            </div>
+
+
+
+            <p class="about-text">
+
+                This temperature converter is designed to
+                provide quick and accurate temperature
+                conversions between Celsius, Fahrenheit,
+                and Kelvin.
+
+            </p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            Temp<span>Convert</span>
+
+        </div>
+
+
+        <p>
+
+            Designed & Built by Priyanka Wagh
+
+        </p>
+
+
+        <p class="copyright">
+
+            © 2026 Priyanka Wagh. All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
